@@ -11,11 +11,19 @@ body {
   color: #222;
   background: lightgrey;
 }
+
+h2 {
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
 /* Link Styles */
 
 a {
   text-decoration: none;
-  color: #999;
+  color: rgb(82, 152, 243);
 }
 a:hover {
   color: #6633ff;
@@ -74,8 +82,32 @@ header .profile-image {
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.5) rotate(360deg);
+  transform: scale(1.5) rotate(20deg);
 }
+
+.resume-page {
+  text-align: center;
+  background: url('images/horsetooth.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
+.resume-page {
+  line-height: 1.5;
+}
+
+header .resume-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 200px;
+  border: 3px solid white;
+  transition: all .5s;
+}
+header .resume-image:hover {
+  transform: scale(1.3);
+}
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -88,18 +120,79 @@ header .profile-image:hover {
   background-color: white;
   color: darkgreen;
 }
-.main-content {
+.background {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
+  border-right: 4px solid #ccc; 
   border-radius: 6px;
   transition: all .5s;
 }
-.main-content:hover {
+.background:hover {
   border-color: green;
+}
+.goals {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-right: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.goals:hover {
+  border-color: purple;
+}
+
+.experience {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 1000px; 
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-right: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+  flex-grow: 2;
+}
+.experience:hover {
+  border-color: yellow;
+}
+
+.education {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-right: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.education:hover {
+  border-color: orange;
+}
+
+.resume-skills {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-right: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.resume-skills:hover {
+  border-color: aqua;
 }
 
 ul.skills {
@@ -110,14 +203,14 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #0c3fcc;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #e69317;
 }
 
 footer {
@@ -175,6 +268,16 @@ a.social:hover {
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
+  }
+
+  .resume {
+    display: flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
   }
 
   header {
